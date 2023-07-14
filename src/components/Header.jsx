@@ -15,7 +15,7 @@ import { FiBell } from "react-icons/fi";
 
 
 import ytLogo from '../images/yt-logo.png';
-// import ytLogoMobile from '../images/yt-logo-mobile.png';
+import ytLogoMobile from '../images/yt-logo-mobile.png';
 
 
 const Header = () => {
@@ -59,8 +59,8 @@ const Header = () => {
         )}
           <Link to='/' className="flex h-5 items-center">
           
-          {/*<img className="h-full dark:md:block" src={ytLogoMobile} alt="YouTube" />*/}
-          <img className="h-full md:block" src={ytLogo} alt="YouTube" />
+          <img className="h-full md:hidden" src={ytLogoMobile} alt="YouTube" />
+          <img className="h-full hidden md:block" src={ytLogo} alt="YouTube" />
           </Link>            
       </div>
 
